@@ -8,14 +8,45 @@ todos.Todo: (models.W042) Auto-created primary key used when not defining a prim
 	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
 
 System check identified 1 issue (0 silenced).
+October 22, 2022 - 15:12:32
+Django version 4.1.2, using settings 'todoApp.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
 
-You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): auth.
-Run 'python manage.py migrate' to apply them.
-October 22, 2022 - 13:46:14
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+October 22, 2022 - 15:14:19
 Django version 4.1.2, using settings 'todoApp.settings'
 Starting development server at http://0.0.0.0:8001/
 Quit the server with CONTROL-C.
-[22/Oct/2022 13:46:14] "GET /todos/ HTTP/1.1" 200 3515
-[22/Oct/2022 13:46:19] "GET /todos/ HTTP/1.1" 200 3515
-[22/Oct/2022 13:46:33] "GET /todos/ HTTP/1.1" 200 3515
-[22/Oct/2022 13:46:35] "GET /todos/ HTTP/1.1" 200 3515
+[22/Oct/2022 15:14:32] "GET / HTTP/1.1" 302 0
+[22/Oct/2022 15:14:32] "GET /todos HTTP/1.1" 301 0
+[22/Oct/2022 15:14:32] "GET /todos/ HTTP/1.1" 200 3515
+[22/Oct/2022 15:14:32] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[22/Oct/2022 15:14:32] "GET /favicon.ico HTTP/1.1" 404 2573
+[22/Oct/2022 15:14:47] "GET /todos/ HTTP/1.1" 200 3515
+[22/Oct/2022 16:11:32] "GET / HTTP/1.1" 302 0
+[22/Oct/2022 16:11:32] "GET /todos HTTP/1.1" 301 0
+[22/Oct/2022 16:11:32] "GET /todos/ HTTP/1.1" 200 3515
+[22/Oct/2022 16:11:32] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[22/Oct/2022 16:11:32] "GET /favicon.ico HTTP/1.1" 404 2573
+[22/Oct/2022 16:14:33] "GET /todos/ HTTP/1.1" 200 3532
+[22/Oct/2022 16:14:50] "POST /todos/add/ HTTP/1.1" 302 0
+[22/Oct/2022 16:14:50] "GET /todos/ HTTP/1.1" 200 4125
+[22/Oct/2022 16:14:53] "GET /todos/2/delete HTTP/1.1" 302 0
+[22/Oct/2022 16:14:53] "GET /todos/ HTTP/1.1" 200 3533
+[22/Oct/2022 16:16:05] "GET / HTTP/1.1" 302 0
+[22/Oct/2022 16:16:05] "GET /todos/ HTTP/1.1" 200 3533
+[22/Oct/2022 16:29:53] "GET / HTTP/1.1" 302 0
+[22/Oct/2022 16:29:53] "GET /todos/ HTTP/1.1" 200 3533
+[22/Oct/2022 16:29:53] "GET /static/css/style.css HTTP/1.1" 304 0
+[22/Oct/2022 16:29:56] "GET /todos/ HTTP/1.1" 200 3533
